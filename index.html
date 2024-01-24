@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <a href=""><img src="./assets/Frame 6.png" alt="Letra A da logo da Alura"></a>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <form action="">
+                <input class="apresentacao__conteudo__input" type="text" placeholder="Digite seu texto">
+                <div class="apresentacao__conteudo__buttons">  
+                    <a onclick="iconeAlerta()"><img class="apresentacao__conteudo__buttons__icone" src="./assets/Group.png" alt="" srcset=""></a>  
+                    <input type="button" onclick="criptografar()" class="apresentacao__conteudo__cript" value="Criptografar">
+                    <input type="button" onclick="descriptografar()" class="apresentacao__conteudo__descript" value="Descriptografar">
+                </div>
+            </form>
+        </section>
+
+        <section class="apresentacaoLateral" id="apresentacaoLateral">
+            <div class="apresentacaoLateral__textos">
+                <img class="apresentacaoLateral__textos__imagem" src="./assets/HighQualityProducts.png" alt="">
+            </div>
+
+            <div class="apresentacaoLateral2">
+                <p class="apresentacaoLateral2__textos__mensagem-nao-encontrada">Nenhuma mensagem encontrada</p>
+                <p class="apresentacaoLateral2__textos__digitar-texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+
+        <section class="apresentacaoLateral_texto-decodificado" id="apresentacaoLateral_texto-decodificado">
+            <div class="apresentacaoLateral_texto-decodificado__div">
+                <textarea name="" id="texto__resposta" class="apresentacaoLateral_texto-decodificado__div__texto" cols="30" rows="10" disabled></textarea>
+                </textarea>
+            </div>
+                <input type="button" onclick="copiarTexto()" class="apresentacaoLateral_texto-decodificado__botao" value="Copiar">            
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Pedro Henrique Dornela Gonçalves.</p>
+    </footer>
+
+    <script src="./controller/controllerDecodificator.js"></script>
+</body>
+</html>
