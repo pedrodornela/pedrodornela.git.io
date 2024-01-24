@@ -77,7 +77,8 @@ form {
 
 .apresentacao__conteudo__cript,
 .apresentacao__conteudo__descript,
-.apresentacao__conteudo__buttons__icone:hover {
+.apresentacao__conteudo__buttons__icone,
+.apresentacaoLateral_texto-decodificado__botao:hover {
     cursor: pointer;
 }
 
